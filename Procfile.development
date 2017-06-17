@@ -1,0 +1,2 @@
+postgresql: postgres -D vendor/postgresql
+# api: java -jar src/api/target/spring-demo-api-0.0.1-SNAPSHOT.jar

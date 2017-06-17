@@ -1,4 +1,10 @@
 .idea/
-target/
-
 spring-demo.iml
+
+vendor/
+
+src/api/target/
+src/api/spring-demo-api.iml
+
+src/core/target/
+src/core/spring-demo-core.iml
