@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DomainErrorToJSONShould {
+class JSONDomainErrorShould {
 
   @Test
   void return_valid_JSON_for_a_message() {
     DomainError error = new DomainError("Unit test error message.");
-    String actual = DomainErrorToJSON.toJSON(error);
+    String actual = JSONDomainError.toJSON(error);
     assertEquals("{\"message\":\"Unit test error message.\"}", actual);
   }
 }

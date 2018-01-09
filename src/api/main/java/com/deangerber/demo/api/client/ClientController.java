@@ -5,7 +5,7 @@ import com.deangerber.demo.domain.client.Client;
 import com.deangerber.demo.domain.exceptions.InvalidClientException;
 import com.deangerber.demo.infrastructure.actions.FindClient;
 import com.deangerber.demo.infrastructure.actions.SaveClient;
-import com.deangerber.demo.infrastructure.parsers.DomainErrorToJSON;
+import com.deangerber.demo.infrastructure.parsers.JSONDomainError;
 import com.deangerber.demo.infrastructure.repositories.ClientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,7 +38,7 @@ public class ClientController {
       return new ResponseEntity<String>(headers, HttpStatus.CREATED);
     } catch (InvalidClientException e) {
       LOG.debug(e.getLocalizedMessage());
-      return new ResponseEntity<>(DomainErrorToJSON.toJSON(e.error()), HttpStatus.BAD_REQUEST);
+      return new ResponseEntity<>(JSONDomainError.toJSON(e.error()), HttpStatus.BAD_REQUEST);
     } catch (org.springframework.dao.DataIntegrityViolationException e) {
       LOG.debug(e.getLocalizedMessage());
       return new ResponseEntity<String>(HttpStatus.CONFLICT);
