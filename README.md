@@ -1,5 +1,9 @@
 # Spring Demo Application
 
+Simple experiment keeping Spring at the perimeter of an Java app.
+
+## Common Commands
+
 Run the application tests.
 
 ``` bash
@@ -58,3 +62,14 @@ Connect to the project database.
 ``` bash
 psql --dbname=spring_demo
 ```
+
+## Built With
+
+* [Java SE 9.0.1](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+* [Spring Boot 1.5.2](https://projects.spring.io/spring-boot/)
+* [PostgreSQL](https://www.postgresql.org)
+* [Foreman](https://github.com/ddollar/foreman)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
