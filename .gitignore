@@ -8,3 +8,5 @@ src/api/spring-demo-api.iml
 
 src/core/target/
 src/core/spring-demo-core.iml
+
+target/
