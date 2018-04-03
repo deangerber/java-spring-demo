@@ -24,5 +24,10 @@
   <build>
     <sourceDirectory>main/java</sourceDirectory>
     <testSourceDirectory>test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>main/resources</directory>
+      </resource>
+    </resources>
   </build>
 </project>
