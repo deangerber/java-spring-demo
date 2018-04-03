@@ -17,7 +17,7 @@ public class FindClient {
   }
 
   public Client byId(Long id) {
-    ClientEntity entity = repository.findOne(id);
+    ClientEntity entity = repository.findById(id).get();
     return adapter.from(entity);
   }
 
