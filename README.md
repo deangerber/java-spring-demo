@@ -10,6 +10,12 @@ Run the application tests.
 mvn clean test
 ```
 
+Run OWASP dependency check.
+
+``` bash
+mvn org.owasp:dependency-check-maven:check
+```
+
 Package the application for distribution.
 
 ``` bash
@@ -69,6 +75,7 @@ psql --dbname=spring_demo
 * [Spring Boot 1.5.2](https://projects.spring.io/spring-boot/)
 * [PostgreSQL](https://www.postgresql.org)
 * [Foreman](https://github.com/ddollar/foreman)
+* [OWASP Dependency-Check](https://www.owasp.org/index.php/OWASP_Dependency_Check)
 
 ## License
 
